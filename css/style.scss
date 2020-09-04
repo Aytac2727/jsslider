@@ -1,0 +1,45 @@
+.container {
+    #slider {
+        margin: 4rem 0;
+        height: 500px;
+        border: 1px solid red;
+        position: relative;
+
+        #prev,#next {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        #prev {
+            left: 25px;
+        }
+
+        #next {
+            right: 25px;
+        }
+
+        .slider-item {
+            display: none;
+            &.slider-active {
+                display: block;
+            }
+            height: 500px;
+            width: 100%;
+            background-position: center;
+            background-size: cover;
+            &:nth-child(1) {
+                background-image: url(../img/autumn-fall-park.jpg);
+            }
+            &:nth-child(2) {
+                background-image: url(../img/bc364e09-0256-424e-bd27-63c72da481f7.png);
+            }
+            &:nth-child(3) {
+                background-image: url(../img/red-autumn-path.jpg);
+            }
+            &:nth-child(4) {
+                background-image: url(../img/ST_ZoomBackground_Beach03.jpg);
+            }
+        }
+    }
+}
